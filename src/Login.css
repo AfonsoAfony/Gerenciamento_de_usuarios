@@ -1,0 +1,149 @@
+
+:root{
+   
+    --dark-10: #ffffff;
+    --dark-20: #14202C;
+    --color-3:#1e3a9e;
+    --white:#ffffff;
+    --borderInput:#E8E8E8;
+    --corInput:#F7FAFC;
+}
+
+#container{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    width:100%;
+    height:738px;
+    
+}
+#container section.row{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-bottom: 15px;
+    width:100%;
+    height:738;
+
+}
+#part1{
+     background-image: url('./img/img5.png');
+   
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    width:50%;
+    height:738px;
+    border-radius: 7px;
+}
+#part2{
+
+    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#part2 h2{
+margin:3px 0 12px 0;
+}
+form#formLogin{
+    width:290px;
+}
+
+
+
+.btnLogin{
+    width:100%;
+    padding:14px 0 14px 0;
+    margin:50px 0 10px 0;
+    background-color: var(--color-3);
+    color:var(--white);
+    cursor:pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.btnLogin:hover{
+    transition: 0.5s;
+    background-color:#456f98 ;
+  
+    
+}
+
+.btnLoginGoogle{
+    width:100%;
+    padding:14px 0 14px 5%;
+    margin:10px 0 10px 0;
+    background-color: var(--dark-20);
+    color:var(--white);
+    cursor:pointer;
+    border-radius: 4px;
+    display: flex;
+    border: none;
+    align-items: center;
+    
+    
+}
+.btnLoginGoogle img{
+    width:30px;
+    padding-right: 8px;
+ 
+}
+.btnLoginGoogle:hover{
+    transition: 0.5s;
+    background-color:rgb(119, 6, 6) ;
+  
+    
+}
+
+div.container p{
+    text-align:center;
+    margin-top:50px;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+
+@media(max-width:675.9px){
+   
+#container section.row{
+   flex-direction: column;
+    margin-bottom: 15px;
+   align-items: center;
+
+}
+#part1{
+    margin:0 0 5% 0;
+    height:290px;
+    width:100%;
+    background-size:100%;
+   
+}
+
+form#formLogin{
+    width:280px;
+}
+
+div.container p{
+    margin-top:0;
+}
+   #part1{
+    margin-bottom:-50px;
+    background-size:60%;
+
+}
+  
+}
+      
+
+@media(min-width:576px) and (max-width:767.9px){
+    #part1{
+
+    background-size:180%;
+}
+
+
+}

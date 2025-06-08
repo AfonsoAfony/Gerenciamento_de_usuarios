@@ -1,0 +1,43 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.activo{
+display:block;
+margin-top: -2%;
+
+}
+.inactivo{
+  display:none;
+}
+
+.Mostrar{
+  visibility:visible;
+}
+
+.NaoMostrar{
+  visibility:hidden;
+}
+
+.smsPositiva{
+ color: rgb(0, 153, 255);
+ font-size: 110%;
+
+}
+.smsNegativa{
+  color: rgba(249, 107, 107, 0.618);
+  font-size: 110%;
+}
+
+
+.trData:hover{
+ background-color: rgba(15,23,43);
+}
+
+.btnDeletar:hover{
+  background-color: rgba(249, 107, 107, 0.618);
+  color:black;
+  border:1px solid black;
+}
