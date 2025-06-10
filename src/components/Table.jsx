@@ -58,7 +58,6 @@ useEffect(() => {
       <th>Último Nome</th>
       <th>Idade</th>
       <th>Email</th>
-      <th>Password</th>
       <th>Deletar</th>
     </tr>
   </thead>
@@ -99,7 +98,7 @@ useEffect(() => {
         <td>{user.lastName}</td>
         <td>{user.age}</td>
         <td >{user.email}</td>
-        <td>{user.password}</td>
+        
         <td><BtnDelete id={user.id}/></td>
         
         </tr>

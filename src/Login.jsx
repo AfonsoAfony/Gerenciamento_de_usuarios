@@ -3,6 +3,7 @@ import './Login.css'
 
 function Login() {
     return(
+        <div className='sections'> 
         <main id="container">
         <section className="row">
             <div id="part1">
@@ -21,6 +22,7 @@ function Login() {
 
         </section>
         </main>
+        </div>
     )
 }
 export default Login

@@ -13,7 +13,7 @@ useEffect(SearchUser,[textSearch])
    function SearchUser(){
     try {
       eventBus.emit("GetOnWaitingIcon")
-      
+
     fetch('https://dummyjson.com/users')
     .then(res => res.json())
     .then(data=>{
@@ -42,12 +42,15 @@ useEffect(SearchUser,[textSearch])
 
   
 return(
-        <div  className=" mt-14 mb-5 flex items-center justify-between my-3 ">
-            <DivInfo/>
+        <div  className=" mt-14 mb-5 flex-col items-center justify-between my-3 ">
+           
             <Waiting/>
-
-            <input name="search" type="txt" value={textSearch} onChange={(e)=>setTextSearch(e.target.value)}  placeholder="Buscar por" className=" text-center w-80 h-10 border-2 border-slate-600  mx-2 rounded-2xl text-slate-50"/>
+            <DivInfo/>
+        <div className='flex justify-center lg:justify-end'>
+             <input name="search" type="txt" value={textSearch} onChange={(e)=>setTextSearch(e.target.value)}  placeholder="Buscar por" className=" text-center mt-5 w-80 h-10 border-2 border-slate-600  mx-2 rounded-2xl text-slate-50"/>
             
+        </div>
+           
         </div>
     )
 }

@@ -37,6 +37,9 @@ function DeleteUser(){
 
                 eventBus.emit("ActiveSms","Dados do usuário Deletados com Sucesso","positivo") 
 
+                //Calling function that clean all inputs:
+                 eventBus.emit("CleanTheInputs")
+                 
                // returning the json data
              return res.json()
         })

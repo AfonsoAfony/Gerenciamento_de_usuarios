@@ -33,7 +33,18 @@ function Inputs(){
 
   useEffect(()=>{
     eventBus.on("PassarDadosParaAlterar",GetUserDateOnTable)
-  },[])
+ 
+    //Create function to clean the inputs:
+    eventBus.on("CleanTheInputs",()=>{
+      setFirstName("")
+      setLastName("")
+      setAge("")
+      setEmail("")
+      setPassword("")
+
+    })
+
+   },[])
 
  return(
   <div>

@@ -1,4 +1,4 @@
-#root {
+.sections {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -6,7 +6,6 @@
 }
 .activo{
 display:block;
-margin-top: -2%;
 
 }
 .inactivo{
@@ -14,11 +13,11 @@ margin-top: -2%;
 }
 
 .Mostrar{
-  visibility:visible;
+  display:flex;
 }
 
 .NaoMostrar{
-  visibility:hidden;
+  display:none;
 }
 
 .smsPositiva{

@@ -18,8 +18,8 @@ function Waiting() {
         
 
     return(
-        <div className={waitingIconActived ? "Mostrar" : "NaoMostrar"}>
-            <div className="border-t-4 border-blue-500 border-solid rounded-full w-8 h-8 animate-spin"></div>
+        <div className={waitingIconActived ? "Mostrar flex justify-center" : "NaoMostrar"}>
+            <div className="border-t-4 border-blue-500 border-solid rounded-full w-10 h-10 animate-spin"></div>
         </div>
     )
 }

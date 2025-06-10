@@ -63,6 +63,9 @@ function updateUser(){
                eventBus.emit("GetOffWaitingIcon")
                eventBus.emit("ActiveSms","Dados do usuário actualizado com sucesso!","positivo")
 
+                //Calling function that clean all inputs:
+                 eventBus.emit("CleanTheInputs")
+
              // returning the json data
               return res.json()    
            
@@ -96,7 +99,7 @@ function updateUser(){
         }
     }
     return(
-        <div className={ActivarEDesactivarBtnUpDate ? "activo" : "inactivo"}>
+        <div className={ActivarEDesactivarBtnUpDate ? "activo  -mt-5 " : "inactivo"}>
         <button className=" rounded-4xl bg-sky-950 mx-2 px-13 md:px-19 lg:px-19 xl:px-19 py-2 border-3 cursor-pointer border-slate-400 text-slate-400" onClick={updateUser}><UserPen/></button>
         <button className=" rounded-4xl  bg-red-500 mx-2 px-13 md:px-19 lg:px-19 xl:px-19 py-2 border-3 cursor-pointer border-slate-400 text-slate-100" onClick={CancelUpdate}><UserRoundX/></button>
         </div>
