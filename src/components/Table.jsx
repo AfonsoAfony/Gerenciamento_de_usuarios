@@ -52,7 +52,7 @@ useEffect(() => {
         <div className=" border-slate-500 flex justify-center ">
      <table className="border-2 w-full rounded">
   <thead>
-    <tr className="text-sm lg:text-xl bg-slate-900  text-slate-500">
+    <tr className="text-xs md:text-sm lg:text-xl bg-slate-900  text-slate-500">
       <th className="py-2 ">Id</th>
       <th>Nome</th>
       <th>Último Nome</th>
@@ -66,7 +66,7 @@ useEffect(() => {
     
       {
        arrayData.map((user,thekey)=>(
-       <tr className="trData text-xs sm:text-sm" onClick={()=>{
+       <tr className="trData text-xs md:text-sm" onClick={()=>{
 
            if(localStorage.getItem("autenticacao")==null && localStorage.getItem("autenticacao")!="autenticado"){
                                                                                         navigate('/login')

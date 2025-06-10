@@ -23,7 +23,7 @@ function Inputs(){
     setEmail(email)
     setPassword(password)
      
-    eventBus.emit("ActiveSms","Dados de usuário elecionado com sucesso, agora edite e salve ou cancele a operação","positivo")
+    eventBus.emit("ActiveSms","Dados de usuário selecionado com sucesso, agora edite e salve ou cancele a operação","positivo")
       
     } catch (error) {
        eventBus.emit("ActiveSms","Ups! Ocorreu um erro ao Seleccionar os dados para poder editar","negativo")
