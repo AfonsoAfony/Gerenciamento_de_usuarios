@@ -13,21 +13,7 @@ function App() {
 
   const navigate=useNavigate()
   //Creat a verifier of auntentication
-  function VerificarAuntenticacao(){
-
-    if(localStorage.getItem("autenticacao")==null && localStorage.getItem("autenticacao")!="autenticado"){
-      navigate('/login')
-      return;//Para a execução aki
-    }
-
-  }
-
-useEffect(()=>{
-  VerificarAuntenticacao()
-  eventBus.on('VerificarAuntenticacao',VerificarAuntenticacao)
-},
-[])
-
+  
   return (
     <div>
 

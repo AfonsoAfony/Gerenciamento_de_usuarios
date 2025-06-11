@@ -12,11 +12,6 @@ function InputLogin() {
     const [password,setPassword]=useState("")
     
     
-useEffect(()=>{
-if(localStorage.getItem("autenticacao")!=null || localStorage.getItem("autenticacao")=="autenticado"){
-        navigate('/')
-    }
-},[])
 function VerificarEmailSenha(){
     eventBus.emit("GetOnWaitingIcon")
     
