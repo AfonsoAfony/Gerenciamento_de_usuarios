@@ -68,8 +68,10 @@ function saveUser(){
                
             eventBus.emit("GetOffWaitingIcon")
             eventBus.emit("ActiveSms","Novo Usuário Cadastrado com Sucesso","positivo")
+            
             //Calling function that clean all inputs:
             eventBus.emit("CleanTheInputs")
+            
             // returning the json data
              return res.json()    
            

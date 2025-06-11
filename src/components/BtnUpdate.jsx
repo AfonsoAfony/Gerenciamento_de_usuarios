@@ -63,9 +63,6 @@ function updateUser(){
                eventBus.emit("GetOffWaitingIcon")
                eventBus.emit("ActiveSms","Dados do usuário actualizado com sucesso!","positivo")
 
-                //Calling function that clean all inputs:
-                 eventBus.emit("CleanTheInputs")
-
              // returning the json data
               return res.json()    
            

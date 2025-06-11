@@ -11,16 +11,16 @@ import Verifier from './Verifier.jsx';
 
 const router = createBrowserRouter([
   {
-    path: "/usuarios",
-    element: <App/>,
+    path: "/",
+    element: <Verifier/>,
   },
   {
-    path: "/login",
+    path: "login",
     element: <Login/>
   },
   {
-    path: "/",
-    element: <Verifier/>
+    path: "usuarios",
+    element: <App/>
   }
 ]);
 

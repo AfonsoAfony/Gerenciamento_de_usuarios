@@ -9,10 +9,10 @@ function Verifier() {
 try {
     useEffect(()=>{
     if(localStorage.getItem("autenticacao")==null || localStorage.getItem("autenticacao")!="autenticado"){
-        navigate('/login')
+        navigate('login')
     }
     else{
-        navigate('/usuarios')
+        navigate('usuarios')
     }
     }
     
