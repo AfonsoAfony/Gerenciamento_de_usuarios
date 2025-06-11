@@ -13,12 +13,26 @@ function App() {
 
   const navigate=useNavigate()
   //Creat a verifier of auntentication
-  
+  function VerificarAuntenticacao(){
+
+    if(localStorage.getItem("autenticacao")==null && localStorage.getItem("autenticacao")!="autenticado"){
+      navigate('/login')
+      return;//Para a execução aki
+    }
+
+  }
+
+useEffect(()=>{
+  VerificarAuntenticacao()
+  eventBus.on('VerificarAuntenticacao',VerificarAuntenticacao)
+},
+[])
+
   return (
     <div>
 
     <div className='bg-slate-900 rounded top-0 py-2 mb-8 flex justify-between'>
-      <a href='http://localhost:5173/' className='text-5xl text-slate-400 flex  ml-7'><img src="" className=''/> <h1> Gest<span className='text-blue-400'>Users</span></h1></a>
+      <a href='http://localhost:5173/' className='text-5xl text-slate-400 flex  ml-7'> <h1> Gest<span className='text-blue-400'>Users</span></h1></a>
       <BtnTerminarSessao/> 
     </div>
       <div className='sections'> 
