@@ -12,7 +12,7 @@ import { Users } from 'lucide-react'
 function App() {
 
   const navigate=useNavigate()
-  //Creat a verifier of auntentication
+  //Create a verifier of auntentication
   function VerificarAuntenticacao(){
 
     if(localStorage.getItem("autenticacao")==null && localStorage.getItem("autenticacao")!="autenticado"){

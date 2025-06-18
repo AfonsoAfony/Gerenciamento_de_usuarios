@@ -2,14 +2,27 @@ import { useEffect, useState } from "react"
 import eventBus from "./eventBus";
 import BtnDelete from "./BtnDelete"
 import { useNavigate } from "react-router-dom";
+import NextAndPrev from "./NextAndPrev";
 
 function Table() {
   
+  //Hook para indicar que tem dados de usuário ta tabela para passar no NextAndPrev.jsx 
+    let temDadosDeUsuarios= true
+
   //Calling useNavigate
 const navigate=useNavigate()
 
 const [arrayData,setArrayUsers]=useState([])
 console.log(arrayData)
+
+//Saber se o tamanho de array retornado é igual a zero para alterar 
+//o temDadosDeUsuarios para false
+if((arrayData.length) == 0){
+  temDadosDeUsuarios=false
+}
+else{
+  temDadosDeUsuarios=true
+}
 
 function GetData(api){
  
@@ -20,6 +33,7 @@ fetch(api)
       .catch(error => console.error("Erro ao buscar dados: ", error))
   
 }
+
 
 
 function GetSearch(filtrados){
@@ -39,7 +53,7 @@ function GetSearch(filtrados){
 
 useEffect(() => {
   //EventBus is a js code that help me to use function of a component in other component
-  // events: on(event, callback) - to send the functio or let already to be used in other components where the eventBus from "./eventBus"; is imported
+  // events: on(event, callback) - to send the function or let already to be used in other components where the eventBus from "./eventBus"; is imported
   // emit(event, data) - to get the function
   eventBus.on("executarFuncao", GetData);
 
@@ -49,6 +63,7 @@ useEffect(() => {
 
 
     return(
+      <div>
         <div className=" border-slate-500 flex justify-center ">
      <table className="border-2 w-full  rounded">
   <thead>
@@ -108,9 +123,10 @@ useEffect(() => {
 
   </tbody>
 </table>
-
+    
     </div>
-
+     <NextAndPrev temDadosDeUsuarios={temDadosDeUsuarios}/>
+</div>
     )
 }
 export default Table

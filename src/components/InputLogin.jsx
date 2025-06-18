@@ -71,7 +71,7 @@ function VerificarEmailSenha(){
 
          <div id="lembrar">
                  <label className='text-slate-400'>
-                   <input class="checkbox" type="checkbox" checked="checked" name="remember"/> Lembre de mim                  
+                   <input className="checkbox" type="checkbox" checked="checked" name="remember"/> Lembre de mim                  
                 </label><br/><br/>
                 <a href="https://dummyjson.com/users" target="_blank" className='text-blue-300'>Pegue um emai aqui: https://dummyjson.com/users</a>
       </div>

@@ -87,7 +87,7 @@ function saveUser(){
     }
 }
     function GetData(){
-        eventBus.emit("executarFuncao",'https://dummyjson.com/users?limit=20')
+        eventBus.emit("executarFuncao",'https://dummyjson.com/users?limit=30')
        
     }
     return(

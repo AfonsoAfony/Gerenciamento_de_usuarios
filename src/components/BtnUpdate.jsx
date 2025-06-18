@@ -80,7 +80,7 @@ function updateUser(){
 }
     function GetData(){
        
-        eventBus.emit("executarFuncao",'https://dummyjson.com/users?limit=20')
+        eventBus.emit("executarFuncao",'https://dummyjson.com/users?limit=30')
     }
     //function that cancel option Update user data 
     function CancelUpdate(){
