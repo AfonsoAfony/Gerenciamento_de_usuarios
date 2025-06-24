@@ -12,6 +12,11 @@ function BtnTerminarSessao(){
         try {
             eventBus.emit("GetOnWaitingIcon")
             localStorage.removeItem("autenticacao")
+
+            if(localStorage.getItem('googleLogin')){
+                eventBus.emit('CloseGoogleSession')
+            }
+
             navigate('/login')
             eventBus.emit("GetOffWaitingIcon")
         } catch (error) {

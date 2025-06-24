@@ -19,9 +19,11 @@ console.log(arrayData)
 //o temDadosDeUsuarios para false
 if((arrayData.length) == 0){
   temDadosDeUsuarios=false
+  console.log("Não tem dados")
 }
 else{
   temDadosDeUsuarios=true
+  console.log("tem dados")
 }
 
 function GetData(api){

@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import DivInfo from './DivInfo';
 import Waiting from './Waiting';
 import eventBus from './eventBus';
+import LoginGoogle from '../LoginGoogle';
 
 function InputLogin() {
     const navigate=useNavigate();
@@ -54,6 +55,7 @@ function VerificarEmailSenha(){
 }
       
 }
+
     return(
 
     
@@ -67,13 +69,12 @@ function VerificarEmailSenha(){
        
         <button onClick={VerificarEmailSenha} className=' btnLogin'>Entrar na conta</button>
 
-         <button type="button" onClick={()=>{eventBus.emit("ActiveSms","Ups! Ainda não Funciona com contas Google, apenas com o seu Email e Senha de Usuário","negativo")}} className="btnLoginGoogle"><img src="src/img/icon.svg" alt=""/>Ou faça login com o Google</button>
-
+         <LoginGoogle/>
          <div id="lembrar">
                  <label className='text-slate-400'>
                    <input className="checkbox" type="checkbox" checked="checked" name="remember"/> Lembre de mim                  
                 </label><br/><br/>
-                <a href="https://dummyjson.com/users" target="_blank" className='text-blue-300'>Pegue um emai aqui: https://dummyjson.com/users</a>
+                <a href="https://dummyjson.com/users" target="_blank" className='text-blue-300'>Pegue um email aqui: https://dummyjson.com/users</a>
       </div>
        {/*calling function that give a sms for user */}
         <div className=' flex h-0 justify-center mb-5 pt-7  border-t-2'>
