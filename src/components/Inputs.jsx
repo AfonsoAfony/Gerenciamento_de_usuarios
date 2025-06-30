@@ -51,25 +51,25 @@ function Inputs(){
     <div className="border-2 rounded-4xl border-slate-400 px-9 lg:flex lg:justify-center">
    <div className=" flex-col items-center justify-center my-9">
       <div className="mb-2  ">
-        <input name="nome" value={FirstName} onChange={(e) => setFirstName(e.target.value)} id="firstName" type="txt" placeholder="Digite o nome do usuário" className=" text-center w-70 md:w-100 lg:w-109  h-8 md:h-9 lg:h-10 border-2 border-slate-600  mx-2 rounded-2xl text-slate-50"/>
+        <input name="nome" value={FirstName} onChange={(e) => setFirstName(e.target.value)} id="firstName" type="txt" placeholder="Digite o nome do usuário" className=" text-center text-[80%] sm:text-[100%] w-[85%] sm:w-[50%] md:w-100 lg:w-109  h-8 md:h-9 lg:h-10 border-2 border-slate-600  mx-2 rounded-2xl text-slate-50"/>
       </div>
       <div className="mb-2">
-        <input name="lastname" value={LastName} onChange={(e) => setLastName(e.target.value)} id="lastName" type="txt" placeholder="Digite o último nome do usuário" className=" text-center w-70 md:w-100 lg:w-109  h-8 md:h-9 lg:h-10 border-2 border-slate-600  mx-2 rounded-2xl text-slate-50"/>
+        <input name="lastname" value={LastName} onChange={(e) => setLastName(e.target.value)} id="lastName" type="txt" placeholder="Digite o último nome do usuário" className=" text-center text-[80%] sm:text-[100%] w-[85%] sm:w-[50%] md:w-100 lg:w-109  h-8 md:h-9 lg:h-10 border-2 border-slate-600  mx-2 rounded-2xl text-slate-50"/>
       </div>
       <div className="px-21 ">
-        <input name="age" value={Age} onChange={(e) => setAge(e.target.value)} id="age" type="number" placeholder=" de 1 até 10" className=" text-center w-30 h-8 md:h-9 border-2 border-slate-600  mx-2 rounded-2xl text-slate-50"/>
+        <input name="age" value={Age} onChange={(e) => setAge(e.target.value)} id="age" type="number" placeholder=" de 1 até 10" className=" text-center text-[50%] sm:text-[100%] w-[50%] h-8 md:h-9 border-2 border-slate-600  mx-2 rounded-2xl text-slate-50"/>
       </div>
        
       </div>
 <div className="flex-col items-center justify-center my-9 mb-18 ">
 
   <div className=" mb-2 ">
-   <input name="email" value={Email} onChange={(e) => setEmail(e.target.value)} id="email" type="email" placeholder="Digite um email válido" required className=" text-center w-70 lg:w-109 lg:h-10  h-8 md:h-9 border-2 border-slate-600  mx-2 rounded-2xl text-slate-50"/>
+   <input name="email" value={Email} onChange={(e) => setEmail(e.target.value)} id="email" type="email" placeholder="Digite um email válido" required className=" text-center text-[80%] sm:text-[100%] w-[85%] sm:w-[50%] md:w-100 lg:h-10  h-8 md:h-9 border-2 border-slate-600  mx-2 rounded-2xl text-slate-50"/>
   </div>
 
   <div className="">
   
-   <input name="password" value={Password} onChange={(e) => setPassword(e.target.value)} id="password" type="txt" placeholder="Digite uma senha segura" required className=" text-center w-70 h-8 md:h-9 lg:w-109 lg:h-10  border-2 border-slate-600  mx-2 rounded-2xl text-slate-50"/>
+   <input name="password" value={Password} onChange={(e) => setPassword(e.target.value)} id="password" type="txt" placeholder="Digite uma senha segura" required className=" text-center text-[80%] sm:text-[100%] w-[85%] sm:w-[50%] md:w-100 lg:w-109  h-8 md:h-9 lg:h-10  border-2 border-slate-600  mx-2 rounded-2xl text-slate-50"/>
   </div>
   <a href="https://gerador-de-senhas-three-ebon.vercel.app/" className='text-blue-300' target="_blank">Busque uma password mais segura</a>
       </div>

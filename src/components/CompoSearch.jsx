@@ -47,7 +47,7 @@ return(
             <Waiting/>
             <DivInfo/>
         <div className='flex justify-center lg:justify-end'>
-             <input name="search" type="txt" value={textSearch} onChange={(e)=>setTextSearch(e.target.value)}  placeholder="Buscar por" className=" text-center mt-5 w-80 h-10 border-2 border-slate-600  mx-2 rounded-2xl text-slate-50"/>
+             <input name="search" type="txt" value={textSearch} onChange={(e)=>setTextSearch(e.target.value)}  placeholder="Buscar por" className=" text-center text-[80%] sm:text-[100%] mt-5 w-[60%] md:w-[30%] h-10 border-2 border-slate-600  mx-2 rounded-2xl text-slate-50"/>
             
         </div>
            

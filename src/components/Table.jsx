@@ -111,11 +111,11 @@ useEffect(() => {
        eventBus.emit("ActivarEDesactivarBtnUpDate")
       }
              }} id={thekey} key={thekey}>
-        <td className="py-3"> {user.id} </td>
-        <td >{user.firstName}</td>
-        <td>{user.lastName}</td>
-        <td>{user.age}</td>
-        <td >{user.email}</td>
+        <td className="text-[70%] md:text-[100%] py-3"> {user.id} </td>
+        <td className="text-[70%] md:text-[100%]">{user.firstName}</td>
+        <td className="text-[70%] md:text-[100%]">{user.lastName}</td>
+        <td className="text-[70%] md:text-[100%]">{user.age}</td>
+        <td className="text-[70%] md:text-[100%]">{user.email}</td>
         
         <td><BtnDelete id={user.id}/></td>
         
