@@ -57,7 +57,7 @@ function Inputs(){
         <input name="lastname" value={LastName} onChange={(e) => setLastName(e.target.value)} id="lastName" type="txt" placeholder="Digite o último nome do usuário" className=" text-center text-[80%] sm:text-[100%] w-[85%] sm:w-[50%] md:w-100 lg:w-109  h-8 md:h-9 lg:h-10 border-2 border-slate-600  mx-2 rounded-2xl text-slate-50"/>
       </div>
       <div className="px-21 ">
-        <input name="age" value={Age} onChange={(e) => setAge(e.target.value)} id="age" type="number" placeholder=" de 1 até 10" className=" text-center text-[50%] sm:text-[100%] w-[50%] h-8 md:h-9 border-2 border-slate-600  mx-2 rounded-2xl text-slate-50"/>
+        <input name="age" value={Age} onChange={(e) => setAge(e.target.value)} id="age" type="number" placeholder=" de 1 até 10" className=" text-center text-[70%] sm:text-[100%] w-[85%] sm:w-50 h-8 md:h-9 border-2 border-slate-600  mx-2 rounded-2xl text-slate-50"/>
       </div>
        
       </div>

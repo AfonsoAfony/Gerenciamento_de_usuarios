@@ -139,11 +139,12 @@ div.container p{
 }
       
 
-@media(min-width:576px) and (max-width:767.9px){
+@media(min-width:1px) and (max-width:674.9px){
     #part1{
-
-    background-size:180%;
+ display: none;
 }
 
-
+  #part2{
+ margin-top: -10px;
+}
 }
