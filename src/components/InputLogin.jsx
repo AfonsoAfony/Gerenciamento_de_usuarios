@@ -60,12 +60,19 @@ function VerificarEmailSenha(){
 
     
         <div className=" border-2 rounded-3xl w-80 px-5 py-5 flex justify-center flex-col">
+
+            
         <label htmlFor="*email" className='text-amber-50'>E-mail:</label>
         <input className=" rounded text-slate-900 text-center bg-slate-300 h-9 mb-6 mt-3" type="Email"  name="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)}  placeholder="Digite o seu mail por favor" required />
                 
         <label htmlFor="password"><b>Senha</b></label>
         <input className=" rounded text-slate-900 text-center bg-slate-300 h-9 mb-2 mt-3" type="text" name="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Digite a sua senha por favor" required />
-        
+         {/*calling function that give a sms for user */}
+        <div className=' flex h-0 justify-center mb-5 pt-7  border-t-2'>
+            <Waiting/>
+           
+        </div>
+            <DivInfo/>
        
         <button onClick={VerificarEmailSenha} className=' btnLogin'>Entrar na conta</button>
 
@@ -76,12 +83,7 @@ function VerificarEmailSenha(){
                 </label><br/><br/>
                 <a href="https://dummyjson.com/users" target="_blank" className='text-blue-300'>Pegue um email aqui: https://dummyjson.com/users</a>
       </div>
-       {/*calling function that give a sms for user */}
-        <div className=' flex h-0 justify-center mb-5 pt-7  border-t-2'>
-            <Waiting/>
-           
-        </div>
-            <DivInfo/>
+      
         </div>
     )
 }
