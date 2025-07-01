@@ -11,8 +11,7 @@ function Login() {
             </div>
             <div id="part2">
                 <div id="div-formulario">
-                    <p>Bem-vindo de volta</p>
-                    <h2>Faça login na sua conta</h2>
+                    
                         <div id="formLogin">
                            <InputLogin/>
                         </div>
