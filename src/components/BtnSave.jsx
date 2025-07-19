@@ -92,7 +92,7 @@ function saveUser(){
     }
     return(
         <div className= {ActivarEDesactivarBtnSave ? "activo -mt-5 " : "inactivo"}>
-            <button className=" rounded-4xl bg-sky-950  px-19 py-2 border-3 cursor-pointer border-slate-400 text-slate-400" onClick={saveUser}><Save/></button>
+            <button className="transicao rounded-4xl bg-sky-950  px-19 py-2 border-3 cursor-pointer border-slate-400 text-slate-400" onClick={saveUser}><Save/></button>
         </div>
        
     )

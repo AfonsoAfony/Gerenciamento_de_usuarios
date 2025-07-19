@@ -3,44 +3,82 @@
    
     --dark-10: #ffffff;
     --dark-20: #14202C;
-    --color-3:#1e3a9e;
+    --color-3: rgb(2,36,89);
+    --color-4: rgb(1,49,159);
     --white:#ffffff;
     --borderInput:#E8E8E8;
     --corInput:#F7FAFC;
 }
+/********Letras******/
+
+.letra1{
+
+  font-family: "Bitcount Grid Single", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size:7rem;
+  font-variation-settings:"slnt" 0,"CRSV" 0.5,"ELSH" 0,"ELXP" 0;
+
+}
+.letra1_2{
+
+  font-family: "Bitcount Grid Single", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:"slnt" 0,"CRSV" 0.5,"ELSH" 0,"ELXP" 0;
+
+}
+
+.letra2{
+   font-family: "Literata", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size:3rem;
+  color:#ffffff;
+  font-style: normal;
+}
+
+.letra3{
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
 
 #container{
     display: flex;
     flex-direction:column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 40px;
     width:100%;
-    height:738px;
+    height:662px;
+  
     
 }
 #container section.row{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    margin-bottom: 15px;
     width:100%;
-    height:738;
 
 }
+
 #part1{
-     background-image: url('./img/img5.png');
-   
+     
+    
     background-size:cover;
     background-repeat:no-repeat;
     background-position:center;
     width:50%;
-    height:738px;
+    height:662px;
     border-radius: 7px;
 }
 #part2{
-
+    opacity:blur(100px);
     width:50%;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,7 +90,6 @@ margin:3px 0 12px 0;
 form#formLogin{
     width:290px;
 }
-
 
 
 .btnLogin{
@@ -68,7 +105,7 @@ form#formLogin{
 
 .btnLogin:hover{
     transition: 0.5s;
-    background-color:#456f98 ;
+    background-color:var(--color-4);
   
     
 }
@@ -115,6 +152,8 @@ div.container p{
    align-items: center;
 
 }
+
+
 #part1{
     margin:0 0 5% 0;
     height:290px;
@@ -125,6 +164,8 @@ div.container p{
 
 form#formLogin{
     width:280px;
+    transition: 2s ; /* Aplica transição lenta em todos os estilos */
+           
 }
 
 div.container p{
@@ -135,7 +176,14 @@ div.container p{
     background-size:60%;
 
 }
-  
+ #container section.row{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width:100%;
+    padding-top:25px;
+
+} 
 }
       
 
@@ -145,6 +193,15 @@ div.container p{
 }
 
   #part2{
- margin-top: -10px;
+ margin-top: -10%;
+
+}
+#container section.row{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width:100%;
+    padding-top:25px;
+
 }
 }

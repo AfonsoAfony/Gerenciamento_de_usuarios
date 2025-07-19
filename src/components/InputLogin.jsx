@@ -57,17 +57,17 @@ function VerificarEmailSenha(){
 }
 
     return(
-
+<div className=' backdrop-blur-xl w-80'>
     
-        <div className=" border-2 rounded-3xl w-80 px-5 py-5 flex justify-center flex-col">
-        <label htmlFor="*email" className='text-amber-50'>E-mail:</label>
-        <input className=" rounded text-slate-900 text-center bg-slate-300 h-9 mb-6 mt-3" type="Email"  name="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)}  placeholder="Digite o seu mail por favor" required />
+        <div className=" transicao border-2 rounded-3xl w-80 px-5 py-5 flex justify-center flex-col">
+        <label htmlFor="*email" className='letra1_2 transicao text-amber-50'>E-mail:</label>
+        <input className=" rounded text-slate-900 transicao text-center bg-slate-300 h-9 mb-6 mt-3" type="Email"  name="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)}  placeholder="Digite o seu mail por favor" required />
                 
-        <label htmlFor="password"><b>Senha</b></label>
-        <input className=" rounded text-slate-900 text-center bg-slate-300 h-9 mb-2 mt-3" type="text" name="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Digite a sua senha por favor" required />
+        <label htmlFor="password" className='letra1_2 transicao text-amber-50'>Senha:</label>
+        <input className=" rounded transicao text-slate-900 text-center bg-slate-300 h-9 mb-2 mt-3" type="text" name="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Digite a sua senha por favor" required />
         
        
-        <button onClick={VerificarEmailSenha} className=' btnLogin'>Entrar na conta</button>
+        <button onClick={VerificarEmailSenha} className='letra1_2 text-bold transicao btnLogin'>Entrar na conta</button>
 
          <LoginGoogle/>
          <div id="lembrar">
@@ -81,8 +81,10 @@ function VerificarEmailSenha(){
             <Waiting/>
            
         </div>
-            <DivInfo/>
+           
         </div>
+         <DivInfo/>
+         </div>
     )
 }
 export default InputLogin

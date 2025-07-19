@@ -66,8 +66,8 @@ useEffect(() => {
 
     return(
       <div>
-        <div className=" border-slate-500 flex justify-center ">
-     <table className="border-2 w-full  rounded">
+        <div className=" transicao border-slate-500 flex justify-center ">
+     <table className="letra3 transicao border-2 w-full  rounded">
   <thead>
     <tr className="text-xs md:text-sm lg:text-xl bg-slate-900  text-slate-500">
       <th className="py-2 ">Id</th>

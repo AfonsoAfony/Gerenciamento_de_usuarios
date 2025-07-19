@@ -29,7 +29,7 @@ function BtnTerminarSessao(){
     }
     return(
         <div className="flex justify-end">
-            <button className=" rounded  mr-7 px-5 md:px-7 py-2 border-1 sm:text-base text-xs  cursor-pointer hover:bg-red-800 border-red-400 hover:border-slate-400 text-red-400 hover:text-slate-200 " onClick={TerminarSessao}><DoorOpen/></button>
+            <button className="transicao rounded  mr-7 px-5 md:px-7 py-2 border-1 sm:text-base text-xs  cursor-pointer hover:bg-red-800 border-red-400 hover:border-slate-400 text-red-400 hover:text-slate-200 " onClick={TerminarSessao}><DoorOpen/></button>
         </div>
         
     )

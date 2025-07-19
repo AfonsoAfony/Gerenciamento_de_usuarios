@@ -33,7 +33,7 @@ function DivInfo(params) {
 
     return(
         <div className={smsActived ? "Mostrar flex justify-center mt-3" : "NaoMostrar"}>
-        <div className="border-2 rounded-2xl border-slate-400 px-5 py-2 justify-center">
+        <div className="transicao letra_3 border-2 rounded-2xl border-slate-400 px-5 py-2 justify-center">
             <p className={smsType=="positivo" ? "smsPositiva" : "smsNegativa"}>{sms}</p>
         </div>
         </div>
