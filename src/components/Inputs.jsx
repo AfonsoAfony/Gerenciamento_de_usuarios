@@ -49,7 +49,7 @@ function Inputs(){
  return(
   <div>
     <div className="transicaoletra3 border-2 rounded-4xl border-slate-400 px-9 lg:flex lg:justify-center">
-   <div className=" flex-col items-center justify-center my-9">
+    <div className=" flex-col items-center justify-center my-9">
       <div className="transicao mb-2 transicao">
         <input name="nome" value={FirstName} onChange={(e) => setFirstName(e.target.value)} id="firstName" type="txt" placeholder="Digite o nome do usuário" className=" transicao text-center text-[80%] sm:text-[100%] w-[85%] sm:w-[50%] md:w-100 lg:w-109  h-8 md:h-9 lg:h-10 border-2 border-slate-600  mx-2 rounded-2xl text-slate-50"/>
       </div>

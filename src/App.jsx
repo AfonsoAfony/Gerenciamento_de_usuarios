@@ -29,10 +29,10 @@ useEffect(()=>{
 [])
 
   return (
-    <div>
+<div class="body_App">
 
     <div className='bg-slate-900 rounded top-0 py-2 mb-8 flex justify-between'>
-      <a href='http://localhost:5173/' className='letra1_2 text-[150%] md:text-5xl text-slate-400 flex  ml-7'> <h1> Gest<span className='text-blue-400'>Users</span></h1></a>
+      <a href='http://localhost:5173/' className='letra1_2 transicao text-[150%] md:text-5xl text-slate-400 flex  ml-7'> <h1> Gest<span className='text-blue-400'>Users</span></h1></a>
       <BtnTerminarSessao/> 
     </div>
       <div className='sections'> 
@@ -43,8 +43,9 @@ useEffect(()=>{
         <Table/>
       </div>
 
-      </div>
+</div>
   )
+  
 }
 
 export default App

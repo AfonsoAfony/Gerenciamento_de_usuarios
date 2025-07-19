@@ -7,6 +7,10 @@ div#body_login{
     height: 810px;
 }
 
+div#body_App{
+      background-color:#001039b1;
+
+}
 .sections {
   max-width: 1280px;
   margin: 0 auto;
