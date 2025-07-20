@@ -2,7 +2,7 @@
 _____________
 # **Users Management System**
 
-### This is a System Mager of Users, that consume an Public API  of users: <https://dummyjson.com/users> to simulate a uso of a private API
+### This is a System Manager of Users, that consume an Public API  of users( <https://dummyjson.com/users> ) to simulate all CRUD in the system with ReactJs
 
 ### Was created with ReactJs, I also use Tailwinds and Css to design the system. 
 
