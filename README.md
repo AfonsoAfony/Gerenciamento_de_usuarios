@@ -1,12 +1,19 @@
-# React + Vite
+#### Hello 👋
+_____________
+# **Users Management System**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### This is a System Mager of Users, that consume an Public API  of users: <https://dummyjson.com/users> to simulate a uso of a private API
+### Was created with ReactJs, I also use Tailwinds and Css to design the system. 
+### Also increase a possibility to make login with Google account for educational purposes
+### using [Console.Cloud.Google](https://console.cloud.google.com/welcome?pli=1&inv=1&invt=Ab3Npw&project=rock-verbena-463400-u3) 
+> googleLogout, useGoogleLogin do '@react-oauth/google'; 
 
-Currently, two official plugins are available:
+[See it working](https://gerenciamento-de-usuarios-mu.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Created with:
+<div>
+  ReactJs | JAVASCRIPT| HTML5 |   CSS   | TAILWINDS | 
+  ------- | ------  |  ------- | ------  |  ------- | 
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" / width="5%"> |  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="5%">  |  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain.svg" width="5%"/>  |  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg"  width="5%"/>  |  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" width="5%"/> |
+          
+</div>
